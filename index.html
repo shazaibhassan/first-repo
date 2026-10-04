@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shazaib Hassan | Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Page Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-mark">
+      <span class="lm-box">&gt;</span>
+      <span class="lm-text">_Shazaib</span>
+    </div>
+    <div class="loader-track">
+      <div class="loader-fill"></div>
+    </div>
+  </div>
+
+  <!-- Fixed right-side page indicator -->
+  <nav class="page-nav" aria-label="Page sections">
+    <div class="page-nums">
+      <button class="pnum active" data-target="home">00</button>
+      <button class="pnum" data-target="about">01</button>
+      <button class="pnum" data-target="skills">02</button>
+      <button class="pnum" data-target="work">03</button>
+      <button class="pnum" data-target="contact">04</button>
+    </div>
+    <div class="scroll-cue" id="scrollCue">
+      <span class="scroll-cue-text" id="scrollCueText">Scroll Down</span>
+      <span class="scroll-cue-arrow" id="scrollCueArrow">&#8595;</span>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="site-header">
+    <a href="#home" class="logo">
+      <span class="logo-prompt">&gt;</span>
+      <span class="logo-name">_Shazaib</span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="#contact" class="cta-btn" id="headerCta">Contact</a>
+  </header>
+
+  <!-- Mobile navigation -->
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <a href="#home" class="mnav-link">Home</a>
+    <a href="#about" class="mnav-link">About</a>
+    <a href="#skills" class="mnav-link">Skills</a>
+    <a href="#work" class="mnav-link">Work</a>
+    <a href="#contact" class="mnav-link">Contact</a>
+  </div>
+
+  <main>
+
+    <!-- 00 · HERO -->
+    <section id="home" class="section hero-section" data-index="0">
+      <div class="hero-grid">
+
+        <div class="hero-copy">
+          <!-- Line-mask reveal: each .lw clips its child span -->
+          <h1>
+            <span class="lw"><span>Web</span></span>
+            <span class="lw"><span>Developer</span></span>
+          </h1>
+          <p class="hero-desc hero-anim-desc">Crafting modern, accessible, and secure web experiences. I build elegant interfaces, solve complex design challenges, and bring ideas to life through clean, scalable code.</p>
+          <a href="#about" class="text-link purple-link hero-anim-link">About me <span class="arr">&#8250;</span></a>
+        </div>
+
+        <div class="hero-visual" id="heroVisual">
+          <div class="visual-scene">
+            <div class="scene-win win-left">
+              <div class="win-dots"><span></span><span></span><span></span></div>
+              <div class="win-row"></div>
+              <div class="win-row short"></div>
+              <div class="win-row"></div>
+              <div class="win-row short"></div>
+            </div>
+            <div class="scene-win win-top">
+              <div class="win-dots"><span></span><span></span><span></span></div>
+              <div class="win-row"></div>
+              <div class="win-row short"></div>
+              <div class="win-row"></div>
+            </div>
+            <div class="scene-win win-right">
+              <div class="win-dots"><span></span><span></span><span></span></div>
+              <div class="win-row"></div>
+              <div class="win-row"></div>
+              <div class="win-row short"></div>
+            </div>
+            <div class="scene-monitor">
+              <div class="mon-dots"><span></span><span></span><span></span></div>
+              <div class="mon-screen">
+                <div class="mon-lines">
+                  <div class="mline c-purple"></div>
+                  <div class="mline short c-blue"></div>
+                  <div class="mline"></div>
+                  <div class="mline short c-purple"></div>
+                  <div class="mline c-blue"></div>
+                  <div class="mline short"></div>
+                  <div class="mline"></div>
+                </div>
+              </div>
+              <div class="mon-stand"></div>
+            </div>
+            <div class="scene-win win-bottom">
+              <div class="win-dots"><span></span><span></span><span></span></div>
+              <div class="win-row"></div>
+              <div class="win-row short"></div>
+            </div>
+            <!-- Purple badge -->
+            <div class="badge-circle">
+              <span class="badge-icon">&lt;/&gt;</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="fshape diamond" style="right:36%;bottom:10%;"></div>
+    </section>
+
+    <!-- 01 · ABOUT -->
+    <section id="about" class="section about-section" data-index="1">
+      <div class="about-grid">
+        <div class="about-left" data-anim="left">
+          <h2>Hi, I'm Shazaib<br>Web Developer</h2>
+          <p class="about-sub">WordPress Developer / Prompt Engineer</p>
+        </div>
+        <div class="about-right" data-anim="right">
+          <p>Professionally connected to the web development world.</p>
+          <p>I'm a detail-oriented developer who enjoys building thoughtful, high-quality web experiences. I'm passionate about solving problems, collaborating with great people, and continuously learning.</p>
+          <p>Outside of work, you'll find me exploring new technologies, experimenting with AI workflows, and building projects that make a real impact online.</p>
+        </div>
+      </div>
+      <div class="fshape diamond" style="right:42%;top:8%;"></div>
+      <div class="fshape cube" style="left:10%;bottom:16%;"></div>
+    </section>
+
+    <!-- 02 · SKILLS -->
+    <section id="skills" class="section skills-section" data-index="2">
+      <div class="skills-content">
+        <p class="eyebrow" data-anim="up">BUILDING THE WEB, ONE LINE AT A TIME.</p>
+        <h2 data-anim="up" data-delay="0.12">Skills &amp; Experience</h2>
+        <p class="skills-desc" data-anim="up" data-delay="0.22">I specialize in building modern, high-quality websites and web applications across WordPress, Shopify, Django, Python, and more.</p>
+        <div class="skills-grid" data-anim="stagger">
+          <!-- WordPress -->
+          <div class="skill-item">
+            <div class="sk-icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 1.5c2.347 0 4.497.851 6.156 2.255L4.755 18.156A8.46 8.46 0 0 1 3.5 12c0-4.687 3.813-8.5 8.5-8.5zm0 17c-2.347 0-4.497-.851-6.156-2.255l13.401-12.401A8.46 8.46 0 0 1 20.5 12c0 4.687-3.813 8.5-8.5 8.5z" fill="#21759b"/><path d="M3.609 12.849l4.374 11.982A8.507 8.507 0 0 1 3.5 12c0-.386.026-.766.07-1.14l.039-.011zm16.782 0c.044.374.07.754.07 1.151 0 4.687-3.813 8.5-8.5 8.5a8.49 8.49 0 0 1-4.483-1.269l4.413-12.099 4.5 11.717zM12 6.75c-.88 0-1.568.196-1.568.196v.588c0 0 .617-.098 1.176-.098.98 0 1.078.392 1.078 1.078v.49c-.343-.049-.637-.098-1.078-.098-1.47 0-2.157.784-2.157 1.862 0 1.176.784 1.862 1.96 1.862.882 0 1.47-.49 1.47-.49v.392h.98V8.514C13.861 7.338 13.174 6.75 12 6.75zm-.196 4.02c-.637 0-.98-.294-.98-.882 0-.588.49-.882 1.078-.882.343 0 .637.049.98.098v1.274c0 0-.49.392-1.078.392z" fill="#21759b"/></svg>
+            </div>
+            <span>WordPress</span>
+          </div>
+          <!-- Shopify -->
+          <div class="skill-item">
+            <div class="sk-icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15.337 23.979l7.216-1.561s-2.604-17.613-2.622-17.73c-.018-.115-.114-.192-.211-.192-.097 0-1.884-.038-1.884-.038s-1.25-1.211-1.384-1.346v20.867h-.001zM11.684 22.668l2.14.481V1.634c-.037.019-2.14 20.974-2.14 21.034zM9.582 7.205s-.69-.192-1.518-.192c-2.219 0-3.276 1.384-3.276 2.74 0 3.065 4.18 3.526 4.18 6.07 0 .576-.25 1.384-1.25 1.384-1.25 0-2.5-.96-2.5-.96l-.461 1.73s1.154 1.134 3.065 1.134c2.047 0 3.584-1.346 3.584-3.469 0-3.219-4.257-3.661-4.257-6.09 0-.883.634-1.499 1.615-1.499.846 0 1.653.403 1.653.403l.165-1.251zM14.46.5c-.046.019-.923.288-.923.288S12.419-.096 11.339.25C8.678 1.037 7.352 4.371 7.006 5.639c-.981.307-1.673.519-1.673.519s-.98.307-.98 1.25c0 .634.249 1.25.249 1.25l-2.22 16.4s14.43 2.72 14.696 2.74L14.46.5z" fill="#96bf48"/></svg>
+            </div>
+            <span>Shopify</span>
+          </div>
+          <!-- Django -->
+          <div class="skill-item">
+            <div class="sk-icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M11.146 0h3.924v18.166c-2.013.382-3.491.535-5.096.535-4.791 0-7.288-2.166-7.288-6.32 0-4.002 2.65-6.6 6.753-6.6.637 0 1.121.05 1.707.203zm0 9.143a3.894 3.894 0 0 0-1.325-.204c-1.988 0-3.134 1.223-3.134 3.365 0 2.09 1.096 3.236 3.109 3.236.433 0 .79-.025 1.35-.102V9.142zM21.314 6.06v11.109c0 3.82-.28 5.657-1.096 7.238-.764 1.53-1.783 2.497-3.872 3.566l-3.644-1.732c2.09-1.02 3.109-1.91 3.77-3.287.687-1.427.916-3.134.916-7.543V6.059h3.926zM17.388 0h3.924v4.027h-3.924z" fill="#092e20"/></svg>
+            </div>
+            <span>Django</span>
+          </div>
+          <!-- Python -->
+          <div class="skill-item">
+            <div class="sk-icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M11.914 0C5.82 0 6.2 2.656 6.2 2.656l.007 2.752h5.814v.826H3.894S0 5.789 0 11.969c0 6.18 3.403 5.963 3.403 5.963h2.031v-2.867s-.109-3.403 3.345-3.403h5.766s3.236.052 3.236-3.13V3.13S18.28 0 11.914 0zm-3.21 1.814a1.053 1.053 0 1 1 0 2.107 1.053 1.053 0 0 1 0-2.107z" fill="url(#python-blue)"/><path d="M12.086 24c6.094 0 5.714-2.656 5.714-2.656l-.007-2.752H12v-.826h8.127S24 18.211 24 12.031c0-6.18-3.403-5.963-3.403-5.963h-2.031v2.867s.109 3.403-3.345 3.403H9.455s-3.236-.052-3.236 3.13v5.402S5.72 24 12.086 24zm3.21-1.814a1.053 1.053 0 1 1 0-2.107 1.053 1.053 0 0 1 0 2.107z" fill="url(#python-yellow)"/><defs><linearGradient id="python-blue" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#5A9FD4"/><stop offset="100%" stop-color="#306998"/></linearGradient><linearGradient id="python-yellow" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#FFD43B"/><stop offset="100%" stop-color="#FFE873"/></linearGradient></defs></svg>
+            </div>
+            <span>Python</span>
+          </div>
+          <!-- JavaScript -->
+          <div class="skill-item">
+            <div class="sk-icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="2" fill="#F7DF1E"/><path d="M6.235 18.875c.408.666.953 1.158 1.906 1.158 1.362 0 2.025-.685 2.025-1.928V11.5h-1.88v6.575c0 .49-.208.707-.544.707-.358 0-.507-.245-.698-.588l-1.809 1.681zM13.5 18.68c.534.853 1.23 1.354 2.47 1.354 1.362 0 2.359-.706 2.359-2.002 0-1.187-.693-1.712-1.874-2.21l-.502-.213c-.612-.26-.877-.433-.877-.865 0-.346.26-.607.673-.607.413 0 .676.18.923.607l1.517-1.006C17.707 12.87 16.99 12.5 15.926 12.5c-1.426 0-2.343.888-2.343 2.052 0 1.157.693 1.703 1.723 2.163l.5.213c.661.288 1.03.462 1.03.955 0 .413-.38.71-.97.71-.722 0-1.123-.38-1.452-.918L13.5 18.68z"/></svg>
+            </div>
+            <span>JavaScript</span>
+          </div>
+          <!-- HTML5 -->
+          <div class="skill-item">
+            <div class="sk-icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z" fill="#E34F26"/></svg>
+            </div>
+            <span>HTML5</span>
+          </div>
+          <!-- CSS3 -->
+          <div class="skill-item">
+            <div class="sk-icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.413z" fill="#1572B6"/></svg>
+            </div>
+            <span>CSS3</span>
+          </div>
+          <!-- Git -->
+          <div class="skill-item">
+            <div class="sk-icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.658 2.66c.645-.223 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.6-.401-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187" fill="#F05032"/></svg>
+            </div>
+            <span>Git</span>
+          </div>
+          <!-- SEO -->
+          <div class="skill-item">
+            <div class="sk-icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.545 10.239v3.821h5.445c-.712 2.315-2.647 3.972-5.445 3.972a6.033 6.033 0 1 1 0-12.064c1.498 0 2.866.549 3.921 1.453l2.814-2.814A9.969 9.969 0 0 0 12.545 2C7.021 2 2.543 6.477 2.543 12s4.478 10 10.002 10c8.396 0 10.249-7.85 9.426-11.748l-9.426-.013z" fill="#4285F4"/><path d="M2.543 12c0-5.523 4.478-10 10.002-10 2.76 0 5.26 1.119 7.074 2.927l-2.814 2.814A6.01 6.01 0 0 0 12.545 6a6.033 6.033 0 0 0-6.033 6.033" fill="#34A853"/><path d="M6.512 15.568A6.033 6.033 0 0 1 6.512 8.4l-2.85-2.85A9.969 9.969 0 0 0 2.543 12c0 2.76 1.119 5.26 2.927 7.074l2.85-2.85a5.98 5.98 0 0 1-.808-.656z" fill="#FBBC05"/><path d="M12.545 18.032c-1.498 0-2.866-.55-3.92-1.453l-2.815 2.815A9.97 9.97 0 0 0 12.545 22c2.397 0 4.628-.862 6.36-2.292l-2.85-2.85a6.01 6.01 0 0 1-3.51 1.174z" fill="#EA4335"/></svg>
+            </div>
+            <span>SEO</span>
+          </div>
+          <!-- AI Tools -->
+          <div class="skill-item">
+            <div class="sk-icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z" fill="#10a37f"/></svg>
+            </div>
+            <span>AI Tools</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 · WORK -->
+    <section id="work" class="section work-section" data-index="3">
+
+      <!-- Intro state -->
+      <div class="work-intro" id="workIntro">
+        <h2 data-anim="up">Portfolio &amp; Previous<br>Projects</h2>
+        <p class="work-desc" data-anim="up" data-delay="0.14">I've built a variety of projects tailored to different client needs. If you'd like to see more examples beyond what's showcased here, feel free to <a href="#contact" class="link-orange">get in touch</a> — I'd be happy to share.</p>
+        <a href="#" class="text-link see-link" id="seeProjects" data-anim="up" data-delay="0.28">See Projects <span class="arr">&#8250;</span></a>
+      </div>
+
+      <!-- Slides state -->
+      <div class="project-slides" id="projectSlides">
+
+        <div class="project-slide active" data-slide="0">
+          <div class="proj-info">
+            <p class="proj-cat">SHOPIFY · E-COMMERCE</p>
+            <h3>Crews</h3>
+            <p class="proj-desc">A premium Pakistani streetwear brand built on Shopify — seasonal collections (Summer, Fall, Cold Crews), a smooth checkout experience, and a bold street-art visual identity.</p>
+            <p class="proj-stack"><strong>Built with:</strong> Shopify, Liquid templates, Custom CSS, JavaScript, SEO &amp; performance optimization.</p>
+            <a href="https://2000crews.com/" target="_blank" rel="noopener" class="text-link link-orange">Visit the store <span class="arr">&#8250;</span></a>
+          </div>
+          <div class="proj-mockup">
+            <div class="laptop crews-laptop">
+              <div class="laptop-screen crews-screen">
+                <!-- Browser chrome bar -->
+                <div class="crews-chrome">
+                  <div class="crews-dots">
+                    <span class="dot-r"></span>
+                    <span class="dot-y"></span>
+                    <span class="dot-g"></span>
+                  </div>
+                  <div class="crews-urlbar">&#128274; 2000crews.com</div>
+                </div>
+                <!-- Clipped viewport — content auto-scrolls -->
+                <div class="crews-viewport">
+                  <div class="crews-site">
+
+                    <!-- Announcement bar -->
+                    <div class="cs-topbar">
+                      <div class="cs-marquee-track">
+                        <span>&#9733;&nbsp; Free Shipping For Orders Over 5000 Rs. &nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <span>&#9733;&nbsp; Free Shipping For Orders Over 5000 Rs. &nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <span>&#9733;&nbsp; Free Shipping For Orders Over 5000 Rs. &nbsp;&nbsp;&nbsp;&nbsp;</span>
+                      </div>
+                    </div>
+
+                    <!-- Nav header -->
+                    <div class="cs-header">
+                      <div class="cs-logo-badge">Crews</div>
+                      <div class="cs-nav-links">
+                        <span>Collections</span>
+                        <span>Home</span>
+                        <span>FALL COLLECTION</span>
+                        <span>COLD CREWS</span>
+                        <span>SUMMER COLLECTION</span>
+                      </div>
+                      <div class="cs-nav-icons">
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                      </div>
+                    </div>
+
+                    <!-- Hero -->
+                    <div class="cs-hero">
+                      <div class="cs-stroke s1"></div>
+                      <div class="cs-stroke s2"></div>
+                      <div class="cs-stroke s3"></div>
+                      <div class="cs-stroke s4"></div>
+                      <div class="cs-hero-inner">
+                        <div class="cs-hero-title">CREWS</div>
+                        <div class="cs-hero-underline"></div>
+                      </div>
+                    </div>
+
+                    <!-- Products -->
+                    <div class="cs-products">
+                      <p class="cs-section-label">Summer 26'</p>
+                      <div class="cs-prod-grid">
+                        <div class="cs-prod-card c1"><div class="cs-figure"></div></div>
+                        <div class="cs-prod-card c2"><div class="cs-figure"></div></div>
+                        <div class="cs-prod-card c3"><div class="cs-figure"></div></div>
+                        <div class="cs-prod-card c4"><div class="cs-figure"></div></div>
+                      </div>
+                    </div>
+
+                    <!-- Second collection row -->
+                    <div class="cs-collection-banner">
+                      <div class="cs-coll-left">
+                        <p class="cs-coll-tag">FALL COLLECTION</p>
+                        <p class="cs-coll-title">Cold Crews</p>
+                      </div>
+                      <div class="cs-coll-cards">
+                        <div class="cs-coll-card cc1"></div>
+                        <div class="cs-coll-card cc2"></div>
+                      </div>
+                    </div>
+
+                  </div><!-- end crews-site -->
+                </div><!-- end crews-viewport -->
+              </div><!-- end laptop-screen -->
+              <div class="laptop-base"></div>
+              <div class="laptop-foot"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-slide" data-slide="1">
+          <div class="proj-info">
+            <p class="proj-cat">WORDPRESS · IT SERVICES</p>
+            <h3>Awal Computer</h3>
+            <p class="proj-desc">A professional IT services company website built on WordPress — showcasing cybersecurity, cloud solutions, networking, and digital transformation services with a bold, corporate aesthetic.</p>
+            <p class="proj-stack"><strong>Built with:</strong> WordPress, Custom PHP Theme, Advanced Custom Fields, CSS3, JavaScript, SEO Optimisation.</p>
+            <a href="https://awalcomputer.com/" target="_blank" rel="noopener" class="text-link link-orange">Visit the site <span class="arr">&#8250;</span></a>
+          </div>
+          <div class="proj-mockup">
+            <div class="laptop aw-laptop">
+              <div class="laptop-screen aw-screen">
+                <!-- Browser chrome -->
+                <div class="aw-chrome">
+                  <div class="aw-dots"><span class="dot-r"></span><span class="dot-y"></span><span class="dot-g"></span></div>
+                  <div class="aw-urlbar">&#128274; awalcomputer.com</div>
+                </div>
+                <!-- Scrolling site content -->
+                <div class="aw-viewport">
+                  <div class="aw-site">
+                    <!-- Header -->
+                    <div class="aw-header">
+                      <div class="aw-logo">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1a6fc4" stroke-width="2.2"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/></svg>
+                        <span>Awal Computer</span>
+                      </div>
+                      <div class="aw-nav">
+                        <span>Home</span><span>About</span><span>Services</span><span>Contact</span>
+                      </div>
+                      <div class="aw-quote-btn">REQUEST QUOTE</div>
+                    </div>
+                    <!-- Hero -->
+                    <div class="aw-hero">
+                      <!-- Dark office background with monitor glow suggestion -->
+                      <div class="aw-hero-bg">
+                        <div class="aw-monitor-glow g1"></div>
+                        <div class="aw-monitor-glow g2"></div>
+                        <div class="aw-person-silhouette"></div>
+                      </div>
+                      <!-- Blue overlay band -->
+                      <div class="aw-overlay-band">
+                        <div class="aw-overlay-title">Empowering Your Business</div>
+                        <div class="aw-overlay-sub">Innovative, secure &amp; scalable IT services that drive digital transformation.</div>
+                      </div>
+                    </div>
+                    <!-- Services section (revealed by scroll) -->
+                    <div class="aw-services">
+                      <div class="aw-services-label">OUR SERVICES</div>
+                      <div class="aw-svc-grid">
+                        <div class="aw-svc-card">
+                          <div class="aw-svc-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1a6fc4" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                          </div>
+                          <div class="aw-svc-name">IT Support</div>
+                        </div>
+                        <div class="aw-svc-card">
+                          <div class="aw-svc-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1a6fc4" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                          </div>
+                          <div class="aw-svc-name">Cybersecurity</div>
+                        </div>
+                        <div class="aw-svc-card">
+                          <div class="aw-svc-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1a6fc4" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+                          </div>
+                          <div class="aw-svc-name">Cloud Solutions</div>
+                        </div>
+                        <div class="aw-svc-card">
+                          <div class="aw-svc-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1a6fc4" stroke-width="2"><rect x="1" y="6" width="6" height="12" rx="1"/><rect x="9" y="3" width="6" height="18" rx="1"/><rect x="17" y="9" width="6" height="9" rx="1"/></svg>
+                          </div>
+                          <div class="aw-svc-name">Networking</div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Stats bar -->
+                    <div class="aw-stats">
+                      <div class="aw-stat"><span class="aw-stat-num">200+</span><span class="aw-stat-lbl">Clients</span></div>
+                      <div class="aw-stat"><span class="aw-stat-num">10+</span><span class="aw-stat-lbl">Years Exp.</span></div>
+                      <div class="aw-stat"><span class="aw-stat-num">98%</span><span class="aw-stat-lbl">Satisfaction</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="laptop-base"></div>
+              <div class="laptop-foot"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-slide" data-slide="2">
+          <div class="proj-info">
+            <p class="proj-cat">DJANGO · E-COMMERCE</p>
+            <h3>Diplomacy Key</h3>
+            <p class="proj-desc">A full-featured auto electronic keys &amp; diagnostic tools e-commerce platform — multi-currency, product filtering by car brand, OEM remotes, pin codes, and tuning software with a custom Django storefront.</p>
+            <p class="proj-stack"><strong>Built with:</strong> Django, Python, PostgreSQL, REST API, Celery, Redis, Bootstrap, JavaScript.</p>
+            <a href="https://www.upwork.com/freelancers/~01a543ac4f527de70c?p=2019044412133351424" target="_blank" rel="noopener" class="text-link link-orange">View on Upwork <span class="arr">&#8250;</span></a>
+          </div>
+          <div class="proj-mockup">
+            <div class="laptop dk-laptop">
+              <div class="laptop-screen dk-screen">
+                <!-- Browser chrome -->
+                <div class="dk-chrome">
+                  <div class="dk-dots"><span class="dot-r"></span><span class="dot-y"></span><span class="dot-g"></span></div>
+                  <div class="dk-urlbar">&#128274; diplomacy.key</div>
+                </div>
+                <!-- Scrolling site -->
+                <div class="dk-viewport">
+                  <div class="dk-site">
+                    <!-- Top utility bar -->
+                    <div class="dk-topbar">
+                      <span>Call Us: +971 56 6668084</span>
+                      <span class="dk-tb-center">AUTO ELECTRONIC KEYS SOLUTIONS</span>
+                      <span>English | USD</span>
+                    </div>
+                    <!-- Main header -->
+                    <div class="dk-header">
+                      <div class="dk-left-nav">
+                        <span>Car Brands</span><span>Manufacturers</span><span>Categories</span>
+                      </div>
+                      <div class="dk-logo">diplomacy<span class="dk-logo-key">.key</span></div>
+                      <div class="dk-right-nav">
+                        <span class="dk-orange">New Arrival</span><span>Best Sellers</span><span class="dk-red">Mega Deals</span>
+                      </div>
+                    </div>
+                    <!-- Filter bar -->
+                    <div class="dk-filterbar">
+                      <div class="dk-filter-tags">
+                        <span class="dk-tag outline-orange">USED</span>
+                        <span class="dk-tag dark">OEM Remote</span>
+                        <span class="dk-tag dark">Downloads</span>
+                        <span class="dk-tag outline-orange">Pin Code</span>
+                      </div>
+                      <div class="dk-search">
+                        <span class="dk-search-text">Enter Keyword or Part Number</span>
+                        <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                      </div>
+                      <div class="dk-cart-icons">
+                        <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                      </div>
+                    </div>
+                    <!-- Hero banner - Black Friday -->
+                    <div class="dk-hero">
+                      <!-- Left product pile -->
+                      <div class="dk-prod-pile left">
+                        <div class="dk-prod-box p1"></div>
+                        <div class="dk-prod-box p2"></div>
+                        <div class="dk-prod-box p3"></div>
+                      </div>
+                      <!-- Center text -->
+                      <div class="dk-hero-center">
+                        <div class="dk-bf-frame">
+                          <div class="dk-bf-title">BLACK FRIDAY</div>
+                          <div class="dk-bf-sub">SEASON IS HERE</div>
+                        </div>
+                        <div class="dk-bf-desc">Cutting-edge diagnostic &amp; key programming tools — now at special prices.</div>
+                        <div class="dk-shop-btn">SHOP NOW</div>
+                      </div>
+                      <!-- Right product pile -->
+                      <div class="dk-prod-pile right">
+                        <div class="dk-prod-box p4"></div>
+                        <div class="dk-prod-box p5"></div>
+                        <div class="dk-prod-box p6"></div>
+                      </div>
+                    </div>
+                    <!-- Product grid (revealed by scroll) -->
+                    <div class="dk-products">
+                      <div class="dk-prod-section-label">&#11088; New Arrivals</div>
+                      <div class="dk-prod-grid">
+                        <div class="dk-prod-card">
+                          <div class="dk-prod-img img1"></div>
+                          <div class="dk-prod-info">
+                            <div class="dk-prod-name">AUTEL MaxiIM IM608 Pro</div>
+                            <div class="dk-prod-price">$1,299<span class="dk-old-price">$1,599</span></div>
+                          </div>
+                        </div>
+                        <div class="dk-prod-card">
+                          <div class="dk-prod-img img2"></div>
+                          <div class="dk-prod-info">
+                            <div class="dk-prod-name">KESS V3 Master ECU Tool</div>
+                            <div class="dk-prod-price">$899<span class="dk-old-price">$1,099</span></div>
+                          </div>
+                        </div>
+                        <div class="dk-prod-card">
+                          <div class="dk-prod-img img3"></div>
+                          <div class="dk-prod-info">
+                            <div class="dk-prod-name">VVDI Key Tool Plus</div>
+                            <div class="dk-prod-price">$649<span class="dk-old-price">$799</span></div>
+                          </div>
+                        </div>
+                        <div class="dk-prod-card">
+                          <div class="dk-prod-img img4"></div>
+                          <div class="dk-prod-info">
+                            <div class="dk-prod-name">PCM Tuner Slave Kit</div>
+                            <div class="dk-prod-price">$549<span class="dk-old-price">$699</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="laptop-base"></div>
+              <div class="laptop-foot"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-slide" data-slide="3">
+          <div class="proj-info">
+            <p class="proj-cat">NEXT.JS · FULL-STACK</p>
+            <h3>CH Furniture</h3>
+            <p class="proj-desc">A premium wooden furniture catalog for a Sialkot-based manufacturer — elegant collection browsing, category pages for dewans, dining sets &amp; beds, and direct WhatsApp enquiry integration.</p>
+            <p class="proj-stack"><strong>Built with:</strong> Next.js, React, Tailwind CSS, JavaScript, Vercel, WhatsApp API.</p>
+            <a href="https://ch-furniture.vercel.app/" target="_blank" rel="noopener" class="text-link link-orange">Visit the site <span class="arr">&#8250;</span></a>
+          </div>
+          <div class="proj-mockup">
+            <div class="laptop ch-laptop">
+              <div class="laptop-screen ch-screen">
+                <!-- Browser chrome -->
+                <div class="ch-chrome">
+                  <div class="ch-dots"><span class="dot-r"></span><span class="dot-y"></span><span class="dot-g"></span></div>
+                  <div class="ch-urlbar">&#128274; ch-furniture.vercel.app</div>
+                </div>
+                <!-- Scrolling site -->
+                <div class="ch-viewport">
+                  <div class="ch-site">
+                    <!-- Header -->
+                    <div class="ch-header">
+                      <div class="ch-brand">
+                        <div class="ch-brand-name">CH FURNITURE</div>
+                        <div class="ch-brand-sub">EST. SIALKOT &middot; PAKISTAN</div>
+                      </div>
+                      <div class="ch-nav">
+                        <span class="ch-nav-active">HOME</span>
+                        <span>ABOUT</span>
+                        <span>COLLECTIONS</span>
+                        <span>CONTACT</span>
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                      </div>
+                    </div>
+                    <!-- Hero -->
+                    <div class="ch-hero">
+                      <!-- Warm room background layers -->
+                      <div class="ch-hero-bg">
+                        <div class="ch-room-warm"></div>
+                        <div class="ch-room-sofa"></div>
+                        <div class="ch-room-table"></div>
+                        <div class="ch-hero-overlay"></div>
+                      </div>
+                      <!-- Hero copy -->
+                      <div class="ch-hero-copy">
+                        <div class="ch-hero-num">N&#186; 001 &mdash; SIALKOT, PAKISTAN</div>
+                        <div class="ch-hero-title">Crafting premium wooden furniture with timeless elegance.</div>
+                        <div class="ch-hero-sub">Solid-wood sofas, beds, dining sets and hand-carved pieces — built to last generations.</div>
+                        <div class="ch-hero-btns">
+                          <div class="ch-btn gold">VIEW COLLECTIONS</div>
+                          <div class="ch-btn dark">REQUEST A QUOTE</div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- About section -->
+                    <div class="ch-about">
+                      <div class="ch-about-left">
+                        <div class="ch-who">&#8212; WHO WE ARE</div>
+                        <div class="ch-about-title">A Sialkot workshop devoted to fine wood.</div>
+                      </div>
+                      <div class="ch-about-right">
+                        <div class="ch-about-body">CH FURNITURE is a premium furniture manufacturer based in Sialkot, Pakistan, crafting custom wooden furniture for homes, offices, hotels and restaurants.</div>
+                        <div class="ch-story-link">OUR STORY &#8599;</div>
+                      </div>
+                    </div>
+                    <!-- Stats bar -->
+                    <div class="ch-stats">
+                      <div class="ch-stat"><span class="ch-stat-num">15+</span><span class="ch-stat-lbl">YEARS OF CRAFT</span></div>
+                      <div class="ch-stat"><span class="ch-stat-num">1,200+</span><span class="ch-stat-lbl">PIECES DELIVERED</span></div>
+                      <div class="ch-stat"><span class="ch-stat-num">800+</span><span class="ch-stat-lbl">HAPPY CLIENTS</span></div>
+                      <div class="ch-stat"><span class="ch-stat-num">40</span><span class="ch-stat-lbl">MASTER CRAFTSMEN</span></div>
+                    </div>
+                    <!-- Collections grid -->
+                    <div class="ch-collections">
+                      <div class="ch-coll-grid">
+                        <div class="ch-coll-card cc-dewan1">
+                          <div class="ch-coll-overlay">
+                            <div class="ch-coll-name">raja dewan</div>
+                            <div class="ch-coll-actions">
+                              <span class="ch-wa">&#9679; ASK ON WHATSAPP</span>
+                              <span class="ch-enq">ENQUIRE &#8599;</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ch-coll-card cc-dewan2">
+                          <div class="ch-coll-overlay">
+                            <div class="ch-coll-name">CLASSICAL DEWAN</div>
+                            <div class="ch-coll-actions">
+                              <span class="ch-wa">&#9679; ASK ON WHATSAPP</span>
+                              <span class="ch-enq">ENQUIRE &#8599;</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ch-coll-card cc-dewan3">
+                          <div class="ch-coll-overlay">
+                            <div class="ch-coll-name">modren dewan set</div>
+                            <div class="ch-coll-actions">
+                              <span class="ch-wa">&#9679; ASK ON WHATSAPP</span>
+                              <span class="ch-enq">ENQUIRE &#8599;</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="laptop-base"></div>
+              <div class="laptop-foot"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-dots">
+          <button class="dot active" data-slide="0" aria-label="Project 1"></button>
+          <button class="dot" data-slide="1" aria-label="Project 2"></button>
+          <button class="dot" data-slide="2" aria-label="Project 3"></button>
+          <button class="dot" data-slide="3" aria-label="Project 4"></button>
+        </div>
+        <button class="back-link" id="backBtn">&#8592; Back to Portfolio</button>
+      </div>
+
+      <div class="fshape sphere sm" style="left:20%;top:15%;"></div>
+      <div class="fshape sphere lg" style="right:6%;top:25%;"></div>
+    </section>
+
+    <!-- 04 · CONTACT -->
+    <section id="contact" class="section contact-section" data-index="4">
+      <div class="contact-grid">
+        <div class="globe-wrap">
+          <canvas id="globeCanvas"></canvas>
+        </div>
+        <div class="contact-text">
+          <p class="contact-question" data-anim="up">What would you do if a web development expert was just a click away?</p>
+          <p class="contact-body" data-anim="up" data-delay="0.14">Whether you want to start a new project or just say hello, I'd love to hear from you. You can also connect with me on <a href="https://www.linkedin.com/in/shazaib-hassan-b457b1316" target="_blank" rel="noopener" class="link-orange">LinkedIn</a>.</p>
+          <a href="mailto:hshahzaib651@gmail.com" class="contact-email" data-anim="up" data-delay="0.28">hshahzaib651@gmail.com</a>
+          <div class="contact-actions" data-anim="up" data-delay="0.42">
+            <a href="https://wa.me/923188309652" target="_blank" rel="noopener" class="wa-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- decorative light cube -->
+      <div class="fshape cube cube-light" style="right:8%;bottom:12%;"></div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <span>&#169; 2026 Shazaib Hassan</span>
+  </footer>
+
+  <!-- Lenis smooth scroll -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <!-- GSAP core + ScrollTrigger -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
